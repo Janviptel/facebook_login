@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:id="@+id/fir_id"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:textAlignment="textStart"
+        android:background="@android:color/holo_blue_dark"
+        android:id="@+id/con_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:textColor="@android:color/background_light"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="start"
+
+        />
+
+
+    <TextView
+        android:id="@+id/acc_id"
+        android:layout_below="@+id/con_id"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Account"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="22dp"
+
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/lin_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acc_id"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round"
+        android:minWidth="400dp"
+        android:minHeight="300dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginHorizontal="10dp"
+
+            android:id="@+id/name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="First Name"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:textColorHint="@android:color/black"
+
+
+
+            android:id="@+id/first_id"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/name_id"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/round"
+            android:hint="First Name"
+            android:lineHeight="20dp"
+            android:inputType="text"/>
+
+        <TextView
+
+            android:id="@+id/lname_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/name_id"
+            android:text="Last Name"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:textColorHint="@android:color/black"
+
+            android:inputType="text"
+            android:id="@+id/last_id"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/lname_id"
+            android:layout_alignStart="@id/lname_id"
+            android:layout_alignLeft="@id/lname_id"
+            android:layout_toRightOf="@+id/first_id"
+            android:background="@drawable/round"
+            android:hint="Last Name"
+            android:lineHeight="20dp" />
+
+
+        <TextView
+
+            android:layout_marginHorizontal="10dp"
+
+            android:id="@+id/user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first_id"
+            android:layout_marginTop="10dp"
+            android:text="User Name"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+
+
+            android:id="@+id/us_id"
+            android:textColorHint="@android:color/black"
+
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/user_id"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round"
+            android:hint="Enter Your Email Adress"
+            android:lineHeight="20dp"
+            android:inputType="textEmailAddress"/>
+
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/password_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/us_id"
+            android:layout_marginTop="10dp"
+            android:text="Password"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/pass_id"
+            android:textColorHint="@android:color/black"
+
+
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/password_id"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round"
+            android:hint="Enter Your password"
+            android:lineHeight="20dp"
+            android:inputType="numberPassword"/>
+
+        <RadioButton
+            android:layout_marginHorizontal="10dp"
+
+            android:buttonTint="@android:color/black"
+            android:id="@+id/Rember_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pass_id"
+            android:layout_marginTop="15dp"
+            android:text="Remember Me"
+            android:textColor="@android:color/black"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="15dp"
+        android:id="@+id/but_id"
+        android:layout_below="@+id/lin_id"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/log_id"
+        android:layout_below="@+id/but_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="If You Have Account Log In"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <Button
+        android:background="@android:color/darker_gray"
+        android:id="@+id/log_in_id"
+        android:layout_below="@+id/log_id"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>
